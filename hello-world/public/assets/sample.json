@@ -1,0 +1,11 @@
+{
+    "selector": "plugin-vue-element",
+    "settings": {
+        "config_tabs": {
+            "general": true,
+            "chartProp": true,
+            "data": false,
+            "aggregations": false
+        }
+    }
+}

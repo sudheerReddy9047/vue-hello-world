@@ -1,12 +1,12 @@
 <script setup lang="ts">
 defineProps<{
-  msg: string
+  msg?: string
 }>()
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1>{{ msg }}</h1>
     <h6 class="green">{{ msg }}</h6>
     <h3>
       You’ve successfully created a project with
@@ -18,14 +18,18 @@ defineProps<{
 
 <style scoped>
 h1 {
-  font-weight: 500;
+  font-weight: 100;
   font-size: 2.6rem;
   position: relative;
+  color: blue;
   top: -10px;
 }
 
-h3 {
+h3,
+h6 {
   font-size: 1.2rem;
+  margin: auto;
+  color: blue;
 }
 
 .greetings h1,
