@@ -4,8 +4,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import "ag-grid-community/styles/ag-grid.css"; // Core CSS
-import "ag-grid-community/styles/ag-theme-alpine.css"; // Theme
 import { AgGridVue } from "ag-grid-vue3"; // Vue Grid Logic
 
 const rowData = ref([
@@ -24,3 +22,8 @@ const colDefs = ref([
   { field: "rocket" }
 ]);
 </script>
+
+<style>
+@import "ag-grid-community/styles/ag-grid.css";
+@import "ag-grid-community/styles/ag-theme-alpine.css";
+</style>
